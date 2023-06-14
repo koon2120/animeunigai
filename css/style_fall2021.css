@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+body {
+background-color: #225197;
+    font-family: 'Prompt', sans-serif;
+    color: white;
+}           
+
+/*top*/
+
+.first_text {
+    text-align: center;
+}
+
+.logo {
+    text-align: center;
+    color: #225197;
+    background: #f1f1f1;
+    border-radius: 25;
+}
+
+/*table*/
+
+.table {
+    background-color: #f2f2f2;
+    overflow-x: auto;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+}
+
+th {
+    background-color: #482ea8;
+    color: white;
+    text-align: center;
+}
+
+td {
+    border: 1px solid rgb(110, 110, 110);
+    color: #161616 ;
+    text-align: center;
+}
+
+/*table_time*/
+
+td.time {
+    background-color: #dfdddd;
+    width: 25;
+    height: 125;
+    color: #2C2C2C;
+}
+
+/*table_weekly*/
+
+td.sun {
+    width: 250;
+    background-color: #946b6b;
+}
+
+td.mon {
+    width: 250;
+    background-color: #bbb783;
+}
+
+td.tue {
+    width: 250;
+    background-color: #b88eaf;
+}
+
+td.wed {
+    width: 250;
+    background-color: #96af87;
+}
+
+td.thu {
+    width: 250;
+    background-color: #a18c70;
+}
+
+td.fri {
+    width: 250;
+    background-color: #778ea3;
+}
+
+td.sat {
+    width: 250;
+    background-color: #a981ac;
+}

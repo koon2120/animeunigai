@@ -1,0 +1,36 @@
+/*---Font Edit---*/
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
+
+#text-font {
+    font-family: 'Prompt', sans-serif;
+}
+
+#text-font-02 {
+    font-family: 'Sarabun', sans-serif;
+}
+
+/*---Body Edit---*/
+
+body {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+/*---Button---*/
+
+a.button:link, a.button:visited {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 14px 25px;
+    text-decoration: none;
+    font-family: 'Sarabun', sans-serif;
+}
+
+
+a.button:hover, a.button:active {
+    background-color: rgb(199, 199, 199);
+}
