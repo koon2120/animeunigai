@@ -1,36 +1,111 @@
-/*---Font Edit---*/
-
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;400&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
-
-#text-font {
-    font-family: 'Prompt', sans-serif;
-}
-
-#text-font-02 {
-    font-family: 'Sarabun', sans-serif;
-}
-
-/*---Body Edit---*/
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
 
 body {
+    background-color: #170991;
+    font-family: 'Prompt', sans-serif;
+    color: white;
+}
+
+.first_text {
     text-align: center;
-    color: rgb(255, 255, 255);
-    background-color: black;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-/*---Button---*/
-
-a.button:link, a.button:visited {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    padding: 14px 25px;
-    text-decoration: none;
-    font-family: 'Sarabun', sans-serif;
+.logo {
+    text-align: center;
+    color: #170991;
+    background: #f1f1f1;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
+.table {
+    overflow-x: auto;
+}
 
-a.button:hover, a.button:active {
-    background-color: rgb(199, 199, 199);
+table {
+    border: 2px solid #000a46;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px;
+}
+
+th {
+    background-color: #2215d6;
+    text-align: center;
+}
+
+td {
+    border: 1px solid rgb(110, 110, 110);
+    color: #161616;
+    text-align: center;
+}
+
+td.time {
+    background-color: #dfdddd;
+    width: 25;
+    height: 125;
+    color: #2C2C2C;
+}
+
+td.sun {
+    width: 250;
+    background-color: #c08585;
+}
+
+td.mon {
+    width: 250;
+    background-color: #bbb783;
+}
+
+td.tue {
+    width: 250;
+    background-color: #b88eaf;
+}
+
+td.wed {
+    width: 250;
+    background-color: #96af87;
+}
+
+td.thu {
+    width: 250;
+    background-color: #a18c70;
+}
+
+td.fri {
+    width: 250;
+    background-color: #778ea3;
+}
+
+td.sat {
+    width: 250;
+    background-color: #a981ac;
+}
+
+.anime_title {
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: #161616 0px 0px 10px;
+    margin: 10px;
+}
+
+.anime_time {
+    font-weight: bold;
+    color: #1900ff;
+    text-shadow: #ffb0b0 0px 0px 10px;
+    margin: 15px;
+}
+
+.contact_report {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 50px;
 }
