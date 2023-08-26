@@ -6,10 +6,11 @@ body {
     color: white;
 }
 
-.first_text {
-    text-align: center;
+.selete_ss {
+    padding-left: 50px;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
+
 }
 
 .logo {
