@@ -58,43 +58,42 @@ td.time {
 
 td.sun {
     width: 250;
-    background-color: #c08585;
+    background-color: #d4bcbc;
 }
 
 td.mon {
     width: 250;
-    background-color: #bbb783;
+    background-color: #d8d7c0;
 }
 
 td.tue {
     width: 250;
-    background-color: #b88eaf;
+    background-color: #dac7d5;
 }
 
 td.wed {
     width: 250;
-    background-color: #96af87;
+    background-color: #ccd8c5;
 }
 
 td.thu {
     width: 250;
-    background-color: #a18c70;
+    background-color: #dfd5c8;
 }
 
 td.fri {
     width: 250;
-    background-color: #778ea3;
+    background-color: #c4cfda;
 }
 
 td.sat {
     width: 250;
-    background-color: #a981ac;
+    background-color: #ddc8df;
 }
 
 .anime_title {
     font-weight: bold;
-    color: #ffffff;
-    text-shadow: #161616 0px 0px 10px;
+    color: #242424;
     margin: 10px;
 }
 
@@ -105,8 +104,9 @@ td.sat {
     margin: 15px;
 }
 
-.contact_report {
+.text_bottom {
     text-align: center;
     font-size: 14px;
-    padding-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
