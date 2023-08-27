@@ -19,9 +19,24 @@ if (ss !== null && year !== null) {
             }
         }
         anime_on_air_table = ""
+        anime_on_air_title = ""
+        sub_anime_on_air_title = ""
         anime_on_air_list.forEach(anime_on_air_update)
         function anime_on_air_update(value, index, array) {
-            anime_on_air_table += '<tr><td class="time">' + value['time'] + '</td><td class="sun"><img src="' + value['sun'][1] + '" width="50"><br><p class="anime_title">' + value['sun'][0] + '</p></td> <td class="mon"><img src="' + value['mon'][1] + '" width="50"><br><p class="anime_title">' + value['mon'][0] + '</p></td> <td class="tue"><img src="' + value['tue'][1] + '" width="50"><br><p class="anime_title">' + value['tue'][0] + '</p></td> <td class="wed"><img src="' + value['wed'][1] + '" width="50"><br><p class="anime_title">' + value['wed'][0] + '</p></td> <td class="thu"><img src="' + value['thu'][1] + '" width="50"><br><p class="anime_title">' + value['thu'][0] + '</p></td> <td class="fri"><img src="' + value['fri'][1] + '" width="50"><br><p class="anime_title">' + value['fri'][0] + '</p></td> <td class="sat"><img src="' + value['sat'][1] + '" width="50"><br><p class="anime_title">' + value['sat'][0] + '</p></td></tr>'
+            const day = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"]
+            for (i = 0; i < day.length; i++) {
+                if (value[day[i]]) {
+                    for (x = 0; x < value[day[i]].length; x++) {
+                        sub_anime_on_air_title += '<img src="' + value[day[i]][x][1] + '" width="50"><br><p class="anime_title">' + value[day[i]][x][0] + '</p>'
+                    }
+                    anime_on_air_title += '<td class="' + day[i] + '">' + sub_anime_on_air_title + '</td>'
+                    sub_anime_on_air_title = ""
+                } else {
+                    anime_on_air_title += '<td class="' + day[i] + '"></td>'
+                }
+            }
+            anime_on_air_table += '<tr><td class="time">' + value['time'] + '</td>' + anime_on_air_title + '</tr>'
+            anime_on_air_title = ""
         }
         document.getElementById("seasonal").innerHTML = ss_all
         document.getElementById("list_anime_on_air").innerHTML = '<tr><th></th><th>อาทิตย์</th><th>จันทร์</th><th>อังคาร</th><th>พุธ</th><th>พฤหัสบดี</th><th>ศุกร์</th><th>เสาร์</th></tr>' + anime_on_air_table
