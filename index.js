@@ -5,6 +5,10 @@ const path = require('path')
 
 app.use(express.json())
 app.use('/static', express.static(path.join(__dirname, 'public')))
+app.use((req, res, next) => {
+  res.set('Cache-Control', 'no-store')
+  next()
+})
 
 const seasonal = [["Summer","2023"]]
 
