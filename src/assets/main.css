@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    background-color: rgb(9, 9, 11);
+    background-image: url("./welcome-bg.png");
+    font-family: "Sarabun", sans-serif;
+}
